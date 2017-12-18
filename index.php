@@ -9,5 +9,5 @@ if ($verify_token === 'my_token_code') {
 	echo $challenge;
 }
 
-$input = file_get_contents('php://input');
+$input = json_decode(file_get_contents('php://input'),true);
 var_dump($input);
