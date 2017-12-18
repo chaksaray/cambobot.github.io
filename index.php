@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1><?php echo "Hello word!!"; ?></h1>
-
 <?php 
+	
+	echo "Hello word!!";
+
 	if(isset($_REQUEST['hub_challenge'])){
 		$challenge = $_REQUEST['hub_challenge'];
 		$token = $_REQUEST['hub_verify_token'];
@@ -14,6 +11,3 @@
 		echo $challenge;
 	}
 ?>
-
-</body>
-</html>
